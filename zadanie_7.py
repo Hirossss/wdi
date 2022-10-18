@@ -1,0 +1,24 @@
+liczba_dolna = int(input("Podaj liczbę całkowitą będącą dolną granicą zakresu: "))
+liczba_gorna = int(input("Podaj liczbę całkowitą będącą górną granicą zakresu: "))
+
+if liczba_gorna<liczba_dolna:
+    exit("Granica dolna jest większa niż granica górna, proszę ponownie wprowadzić liczby")
+elif liczba_dolna==liczba_gorna:
+    exit("Proszę podać dwie róźne liczby!")
+
+srednia = int((liczba_gorna+liczba_dolna)/2)
+
+if (liczba_gorna-liczba_dolna+1)>20:
+    for a in range(3):
+        print(str(srednia-(a+1)))
+        print(str(srednia+(a+1)))
+
+else:
+    for i in range(liczba_gorna-liczba_dolna+1):
+        print(liczba_dolna+i)
+
+
+
+
+
+
