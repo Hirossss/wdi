@@ -1,9 +1,13 @@
-liczba_dolna = int(input("Podaj liczbę całkowitą będącą dolną granicą zakresu: "))
-liczba_gorna = int(input("Podaj liczbę całkowitą będącą górną granicą zakresu: "))
+x = int(input("Podaj liczbę całkowitą będącą jedną z granic zakresu: "))
+y = int(input("Podaj liczbę całkowitą będącą drugą z granic zakresu: "))
 
-if liczba_gorna<liczba_dolna:
-    exit("Granica dolna jest większa niż granica górna, proszę ponownie wprowadzić liczby")
-elif liczba_dolna==liczba_gorna:
+if x>y:
+    liczba_gorna=x
+    liczba_dolna=y
+elif x<y:
+    liczba_gorna=y
+    liczba_dolna=x
+else:
     exit("Proszę podać dwie róźne liczby!")
 
 srednia = int((liczba_gorna+liczba_dolna)/2)
