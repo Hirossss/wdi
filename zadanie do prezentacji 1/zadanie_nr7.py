@@ -21,6 +21,14 @@ def dzielenie(liczba):
     else:
         print("0 ma nieskończenie wiele dzielników")
 
-
-x = int(input("Wprowadz swoją liczbę, a program wypisze jej całkowite dzielniki: "))
-dzielenie(x)
+run=True
+while(run):
+    x = input("Wprowadz swoją liczbę, a program wypisze jej całkowite dzielniki: ")
+    try:
+        val = int(x)
+    except ValueError:
+        print("Nie wprowadzono liczby całkowitej, proszę spróbować ponownie.  ")
+    else:
+        x=int(x)    #program wyrzucal definicje, bo traktowal x zdefiniowanego w lini 26 jako stringa
+        run=False
+        dzielenie(x)
