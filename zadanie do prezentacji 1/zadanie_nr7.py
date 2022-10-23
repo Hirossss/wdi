@@ -1,7 +1,7 @@
 def dzielenie(liczba):
     dzielniki=[]
     if liczba>0:
-        for dzielnik in range(1,int(liczba/2)+1):       #sprawdzamy  w zakresie do polowy liczby bo dalej sa warrtosci niecalkowite
+        for dzielnik in range(1,int(liczba/2)+1):   #sprawdzamy  w zakresie do polowy liczby bo dalej sa wartosci niecalkowite
             if liczba % dzielnik==0:
                 dzielniki.append(dzielnik)
                 dzielniki.append(dzielnik*-1)
