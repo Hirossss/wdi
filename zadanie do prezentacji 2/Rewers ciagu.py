@@ -9,22 +9,21 @@ import math
 def ciagi(n):   #wyszukuje jak dlugi jest najdluzszy rewers podciagu w liście
     lista=[]
     for i in range(0, n-1):
-        lista.append(random.randint(1,15))
+        lista.append(random.randint(100,999))   #mozna sie bawic tym rangem i de facto to od niego zalezy czy znajdziemy te rewersy
     suma=0
     for k in range(0, n-1):   #chcemy miec pewnosc, ze beda liczby trzycyfrowe w liscie
         napis = str(lista[k])
         dlugosc = len(napis)
         suma=dlugosc+suma
     if suma % 3 == 1:
-        lista.append(random.randint(10,15)) #dodajemy dwucfyrowa
+        lista.append(random.randint(10,999)) #dodajemy dwucfyrowa
     elif suma % 3 == 2:
         lista.append(random.randint(1, 9))  #dodajemy jednocyfrową
 
     print(lista)
     lista_odwrocona=lista.copy()    #tworzymy kopie listy i ja odwracamy by ulatwic szukanie rewersu
     lista_odwrocona.reverse()
-    print(lista_odwrocona)
-    ##print(lista_odwrocona)
+    #print(lista_odwrocona)
 
     temp=0
     maksimum=0
