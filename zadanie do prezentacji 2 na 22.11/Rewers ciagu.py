@@ -13,7 +13,7 @@ def ciagi(n):   #wyszukuje jak dlugi jest najdluzszy rewers podciagu w liście
     Jest to zabieg kosmetyczny, sprawia że częściej znajdujemy rewersy ciągów. 
     '''
     for i in range(0, n-1):
-        lista.append(random.randint(0,99))   #mozna sie bawic tym rangem i de facto to od niego zalezy czy znajdziemy te rewersy
+        lista.append(random.randint(100,999))   #mozna sie bawic tym rangem i de facto to od niego zalezy czy znajdziemy te rewersy
     suma=0
     for k in range(0, n-1):
         napis = str(lista[k])
@@ -57,7 +57,7 @@ while run:
 '''
 PRZYPADKI TESTOWE
 1. Gdy wykonamy zadanie zgodnie z poleceniem czyli range(100, 999) to jest bardzo mała szansa, że znajdziemy rewers.
-Można modyfikować ten range, do mniejszych liczb by zwiększyć taką szansę
+Można modyfikować ten range do mniejszych liczb by zwiększyć szansę wystąpienia rewersu.
 2. Program traktuje palindrom czyli np, 121 jako rewers sam do siebie!
 3. Przy dużym zakresie program działa niezbyt optymalnie 
 4. Mam przygotowany przykład z treści zadania.
