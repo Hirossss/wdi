@@ -16,4 +16,5 @@ print("Dlugosc szukanego ciagu to " +str(maksimum))
 
 '''
 Tu chodzi nam o rewers do 9317.
+Output powinien być == 4 !
 '''
