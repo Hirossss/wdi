@@ -53,7 +53,7 @@ PRZYPADKI TESTOWE
 1. Przy podaniu n= 108: 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97 101 103 107
 2. http://liczbypierwsze.pl/pierwsze.htm --> liczby pierwsze w danym zakresie
 Do 10 000 powinno byc ich 1229 
-3. W zakresie do 1 000 000 powinno byc ich 78 498. Co sie stało z konsolą?
+3. W zakresie do 1 000 000 powinno byc ich 78 498. Co sie stało z konsolą? -->trzeba opatrzyc komentarzem dzielenie kolejnych liczb pierwszych
 '''
 
 

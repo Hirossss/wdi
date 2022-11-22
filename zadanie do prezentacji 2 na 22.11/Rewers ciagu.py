@@ -25,17 +25,23 @@ def ciagi(n):   #wyszukuje jak dlugi jest najdluzszy rewers podciagu w liście
         lista.append(random.randint(1, 9))  #dodajemy jednocyfrową
 
     print(lista)
+    '''
+    GŁÓWNA CZĘŚĆ ROZWIĄZANIA ZACZYNA SIĘ OD TEGO KROKU 
+    '''
     lista_odwrocona=lista.copy()    #tworzymy kopie listy i ja odwracamy by ulatwic szukanie rewersu
     lista_odwrocona.reverse()
     #print(lista_odwrocona)
 
+    '''
+    POSZUKIWANA REWERSU
+    '''
     temp=0
     maksimum=0
     for i in range(len(lista)):                                 # indeks poczatkowy pierwotnej
-        for ii in range(n-1, i, -1):                            # indeks koncowy odwroconej
+        for ii in range(n-1, i, -1):                            # indeks koncowy pierwotnej
             for j in range(len(lista_odwrocona)):               # indeks poczatkowy zreversowanej
                 for jj in range(n-1, j, -1):                    # indeks koncowy zreversowanej
-                    if lista[i:ii]==lista_odwrocona[j:jj]:      # jeśli się pokryją, może być palindromem
+                    if lista[i:ii]==lista_odwrocona[j:jj]:      # jeśli się pokryją to ..., może być palindromem
                         temp=(len(lista[i:ii]))
                         if temp>maksimum:                       # znajdujemy największy rewers
                             maksimum=temp
@@ -58,7 +64,6 @@ while run:
 PRZYPADKI TESTOWE
 1. Gdy wykonamy zadanie zgodnie z poleceniem czyli range(100, 999) to jest bardzo mała szansa, że znajdziemy rewers.
 Można modyfikować ten range do mniejszych liczb by zwiększyć szansę wystąpienia rewersu.
-2. Program traktuje palindrom czyli np, 121 jako rewers sam do siebie!
-3. Przy dużym zakresie program działa niezbyt optymalnie 
-4. Mam przygotowany przykład z treści zadania.
+2. Program traktuje palindrom czyli np, 121 jako rewers sam do siebie! 
+3. Mam przygotowany przykład z treści zadania w kolejnym programie.
 '''
