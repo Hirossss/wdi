@@ -4,7 +4,6 @@ Proszę napisać program wczytujący dwie macierze o ustalonych wymiarach mxn.
 Dla wczytanych macierzy należy wykonać operacje: dodawania oraz odejmowania dwóch macierzy.
 Wymiar macierzy powinien być definiowany przez użytkownika.
 '''
-
 import random
 def tworzenieMacierzy(w, k, dane):
     mat = []
@@ -13,7 +12,6 @@ def tworzenieMacierzy(w, k, dane):
         for j in range(k):
             listaWierszy.append(dane[w * i + j])#niestety nie uzywamy wszystkich liczb z "dane", ale ciezko to zrobic bardziej optymalnie
         mat.append(listaWierszy)
-
     return mat
 
 wiersze=int(input("Prosze podac ilosc wierszy: "))
@@ -49,6 +47,10 @@ for k in range(wiersze):
 print("Wynik odejmowania macierzy to macierz: ")
 for j in range(wiersze):
     print(wynik_odej[j])
+'''
+PRZYPADKI TESTOWE I WYJASNIENIA:
+
+'''
 
 
 
