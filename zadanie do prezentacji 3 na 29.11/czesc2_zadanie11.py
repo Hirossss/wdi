@@ -120,5 +120,5 @@ PRZYPADKI TESTOWE I WYJASNIENIA:
 [(sin720 + cos360)*tg45 - ctg90+sin(-270)]/cos(60) = 4 
 3. Co się stanie gdy użyjemy, tg90, ctg180?
 4. Co się stanie gdy okaże się, że kąt po obróbce nie należy do puli tych, ktore obslugujemy? Np. sin(680)=sin(320)
-5. Co jesli zle wprowadzimy operator? Sprawdzić np. input: 'krowa', '++' 
+5. Co jesli zle wprowadzimy operator? Sprawdzić np. input: 'krowa', '++'  Albo gdy wprowadzimy złą nazwę funkcji.
 '''
