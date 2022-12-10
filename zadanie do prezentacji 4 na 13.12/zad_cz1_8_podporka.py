@@ -1,15 +1,13 @@
-# A utility function to calculate area
-# of triangle formed by (x1, y1),
-# (x2, y2) and (x3, y3)
+'''
+Program ze stacka sprawdzajacy czy punkt jest wewnatrz na podstawie:
+https://www.geeksforgeeks.org/check-whether-a-given-point-lies-inside-a-triangle-or-not/
+
+Skupiamy sie na przykladzie: https://www.medianauka.pl/zadanie-1126
+'''
 
 def area(x1, y1, x2, y2, x3, y3):
     return round(abs((x1 * (y2 - y3) + x2 * (y3 - y1)
                 + x3 * (y1 - y2)) / 2.0),3)
-
-
-# A function to check whether point P(x, y)
-# lies inside the triangle formed by
-# A(x1, y1), B(x2, y2) and C(x3, y3)
 def isInside(x1, y1, x2, y2, x3, y3, x, y):
     # Calculate area of triangle ABC
     A = abs(area(x1, y1, x2, y2, x3, y3))
@@ -26,18 +24,11 @@ def isInside(x1, y1, x2, y2, x3, y3, x, y):
     # Check if sum of A1, A2 and A3
     # is same as A
     if (A == A1 + A2 + A3):
-        return True
+        return True                 #tzn. ze pkt lezy w srodku
     else:
         return False
 
-
-# Driver program to test above function
-# Let us check whether the point P(10, 15)
-# lies inside the triangle formed by
-# A(0, 0), B(20, 0) and C(10, 30)
-if (isInside(1, 1, 4, -2, -0.1, -3.1, 0, 0)):
+if (isInside(1, 1, 4, -2, -0.1, -3.1, 2, -1.84)):
     print('Inside')
 else:
     print('Not Inside')
-
-# This code is contributed by Danish Raza
