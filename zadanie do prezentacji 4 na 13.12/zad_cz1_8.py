@@ -59,7 +59,7 @@ utrudnia znalezienie takiego trójkąta. Pokazac to na przykladzie z def generat
 2. Nawet jeśli znajdziemy gotowca, to musimy takowy wynik zaokrąglić, bo dzialamy na liczbach zmiennoprzecinkowych o duzych rozwinieciach dziesietnych
 3. Najciekawszym i najważniejszym punktem programu jest sprawdzanie czy punkt leży wewnątrz trójkąta?
 4. Sprawdzic program dla 4 wspolrzednej: (1,-1.68) i (1,-1.69), (1.8,0) i (1.9,0), (2,-2) i (2, -1.84) by pokazac niedokladnosc!
-5. Mozna sie bawic zaokragleniami def area ale zawsze znajdziemy taki punkt ze program nie dziala precyzyjnie. 
+5. Mozna sie bawic zaokragleniami def area ale zawsze znajdziemy taki punkt ze program nie zadziala precyzyjnie. 
 '''
 
 
