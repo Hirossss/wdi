@@ -1,7 +1,7 @@
 '''
 Zadanie 8.
 Dany jest zbiór punktów leżących na płaszczyźnie opisany przy pomocy struktury:
- dane = [(x1, y1), ( x2, y2), (x3, y3), ..., (xN, yN)]
+dane = [(x1, y1), ( x2, y2), (x3, y3), ..., (xN, yN)]
 Proszę napisać funkcję, która zwraca wartość True jeżeli w zbiorze istnieją 3 punkty wyznaczające trójkąt równoboczny,
 wewnątrz którego nie ma żadnych innych punktów. Do funkcji należy przekazać strukturę opisującą położenie punktów.
 '''
@@ -46,10 +46,9 @@ def generate_dane(n):       #na razie nie uzywamy tej funkcji
         dane.append((random.randint(0, 100), random.randint(0, 100)))
     return dane
 
-data: float = [(1,1),(4,-2),(-0.1,-3.1),(1,-1.5)]
+data: float = [(1,1),(4,-2),(-0.1,-3.1),(1,-1.69)]
 a=eq_triangles(data)
 print(a)
-
 
 '''
 SPOSTRZEŻENIA I UWAGI:
