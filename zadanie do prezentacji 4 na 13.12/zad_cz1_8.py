@@ -56,7 +56,7 @@ SPOSTRZEŻENIA I UWAGI:
 1. Nie istnieje trojkat rownoboczny na samych współrzędnych całkowitych,
 więc tutaj mamy pierwszą słabość programu gdy dobieramy współrzędne całkowite. Muszę dokonać zaokrąglenia co znowu mocno
 utrudnia znalezienie takiego trójkąta. Pokazac to na przykladzie z def generate_dane
-2. Nawet jeśli znajdziemy gotowca, to musimy takowy wynik zaokrąglić, wynika to z właściwości pierwiastka z liczby niewymiernej.
+2. Nawet jeśli znajdziemy gotowca, to musimy takowy wynik zaokrąglić, bo dzialamy na liczbach zmiennoprzecinkowych o duzych rozwinieciach dziesietnych
 3. Najciekawszym i najważniejszym punktem programu jest sprawdzanie czy punkt leży wewnątrz trójkąta?
 4. Sprawdzic program dla 4 wspolrzednej: (1,-1.68) i (1,-1.69), (1.8,0) i (1.9,0), (2,-2) i (2, -1.84) by pokazac niedokladnosc!
 5. Mozna sie bawic zaokragleniami def area ale zawsze znajdziemy taki punkt ze program nie dziala precyzyjnie. 
