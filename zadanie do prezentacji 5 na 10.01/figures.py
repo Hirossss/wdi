@@ -1,5 +1,3 @@
-import random
-
 class Figure:
 
     def __init__(self,name):
