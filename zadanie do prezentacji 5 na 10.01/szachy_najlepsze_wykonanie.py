@@ -61,4 +61,8 @@ test_3=[(3,6),(6,3),(5,4)]  #wiecej niz dwa sie szachuja, https://lichess.org/ed
 
 check(test_1)
 
+'''
+WARTO SPOJRZEC:
+1. Zmienic randinta w petli for z bishopem, z (1,100) na (1,8) i zobaczyc na lichess czy dziala?
+'''
 
