@@ -37,6 +37,7 @@ def check(data):    #do wyjasnienia korzystam z artykulu, https://www.geeksforge
         print("Dokladnie dwa gonce sie bija")
     if c>2:
         print("Bija sie ponad dwa gonce")
+
 '''
 run=True
 while(run):
@@ -49,7 +50,7 @@ while(run):
 
 dane=[] #w formie (posx,posy), generujemy wspolrzedne korzystajac z klasy w petli for 
 for i in range(n):
-    bishop=Bishop("bishop",random.randint(1,8),random.randint(1,8))     #1,100 z tresci zadania
+    bishop=Bishop("bishop",random.randint(1,100),random.randint(1,100))     #1,100 z tresci zadania
     dane.append((bishop.posx,bishop.posy))
 print(dane)
 '''
@@ -59,49 +60,5 @@ test_2=[(3,6),(6,3),(3,1)]  #dokladnie dwa sie szachuja, https://lichess.org/edi
 test_3=[(3,6),(6,3),(5,4)]  #wiecej niz dwa sie szachuja, https://lichess.org/editor/8/8/5B2/4B3/8/2B5/8/8_w_-_-_0_1?color=white
 
 check(test_1)
-
-#TESTY Z WYKORZYSTANIEM UNITEST
-
-'''
-import unittest
-class TestCheck(unittest.TestCase):
-    def test_czy_gonce_sie_nie_bija(self):
-        data = [(3, 6), (7, 4), (3, 1)]
-        result = check(data)
-        self.assertEqual(result, "Zadne gonce sie nie bija")
-
-    def test_czy_dwa_gonce_sie_atakuja(self):
-        data = [(3, 6), (6, 3), (3, 1)]
-        result = check(data)
-        self.assertEqual(result, "Dokladnie dwa gonce sie bija")
-
-    def test_czy_wiecej_niz_dwa_sie_atakuja(self):
-        data = [(3, 6), (6, 3), (5, 4)]
-        result = check(data)
-        self.assertEqual(result, "Bija sie ponad dwa gonce")
-
-if __name__ == '__main__':
-    unittest.main()
-'''
-
-'''
-def test_czy_gonce_sie_nie_bija():
-    data = [(3,6),(7,4),(3,1)]
-    result = check(data)
-    assert result == "Zadne gonce sie nie bija"
-
-def test_czy_dwa_gonce_sie_atakuja():
-    data = [(3,6),(6,3),(3,1)]
-    result = check(data)
-    assert result == "Dokladnie dwa gonce sie bija"
-
-def test_czy_wiecej_niz_dwa_sie_atakuja():
-    data = [(3,6),(6,3),(5,4)]
-    result = check(data)
-    assert result == "Bija sie ponad dwa gonce"
-
-'''
-
-
 
 
