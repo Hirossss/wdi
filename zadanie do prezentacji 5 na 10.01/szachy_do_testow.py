@@ -38,11 +38,13 @@ test_2=[(3,6),(6,3),(3,1)]  #dokladnie dwa sie szachuja, https://lichess.org/edi
 test_3=[(3,6),(6,3),(5,4)]  #wiecej niz dwa sie szachuja, https://lichess.org/editor/8/8/5B2/4B3/8/2B5/8/8_w_-_-_0_1?color=white
 
 a=check(test_1)
-
+print(a)
 '''
-TESTY Z WYKORZYSTANIEM UNITEST, Terminal, cd -> dir, python szachy_do_testow.py
+TESTY
 '''
 
+#TESTY Z WYKORZYSTANIEM UNITTEST, wystarczy python szachy_do_testow.py
+'''
 import unittest
 class TestCheck(unittest.TestCase):
     def test_czy_gonce_sie_nie_bija(self):
@@ -62,8 +64,9 @@ class TestCheck(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+'''
 
-#TESTY Z WYKORZYSTANIEM PYTEST, wystarczy run albo pytest szachy_do_testow.py
+#TESTY Z WYKORZYSTANIEM PYTEST, wystarczy run albo pytest -rA szachy_do_testow.py
 '''
 def test_czy_gonce_sie_nie_bija():
     data = [(3,6),(7,4),(3,1)]

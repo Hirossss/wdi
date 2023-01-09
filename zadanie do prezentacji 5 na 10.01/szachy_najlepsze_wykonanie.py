@@ -59,6 +59,6 @@ test_1=[(3,6),(7,4),(3,1)]  #zadne sie nie szachuja, https://lichess.org/editor/
 test_2=[(3,6),(6,3),(3,1)]  #dokladnie dwa sie szachuja, https://lichess.org/editor/8/2B5/5B2/8/8/2B5/8/8_w_-_-_0_1?color=white
 test_3=[(3,6),(6,3),(5,4)]  #wiecej niz dwa sie szachuja, https://lichess.org/editor/8/8/5B2/4B3/8/2B5/8/8_w_-_-_0_1?color=white
 
-check(test_1)
+check(test_2)
 
 
