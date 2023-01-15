@@ -10,5 +10,6 @@ https://hirossss.github.io/
 
 # Fork związany z mnożeniem macierzy
 https://github.com/Hirossss/matrix_multiplication.git
-/n Pomysł ten został wzięty z Papers with Code (link): 
+
+Pomysł ten został wzięty z Papers with Code (link): 
 https://paperswithcode.com/paper/discovering-faster-matrix-multiplication#code 
