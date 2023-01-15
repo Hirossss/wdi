@@ -17,9 +17,9 @@ https://paperswithcode.com/paper/discovering-faster-matrix-multiplication#code
 
 
 # :mortar_board: Moje bio
-Jestem studentem pierwszego roku na AGH
-Korzystam z narzędzia Git do celów programistycznych i edukacyjnych
-:heart_eyes_cat: Uwielbiam koty!
+- jestem studentem pierwszego roku na AGH
+- korzystam z narzędzia Git do celów programistycznych i edukacyjnych
+- :heart_eyes_cat: Uwielbiam koty!
 
 # :computer: Moja strona
 Odwiedź moją stronę hirossss.github.io
