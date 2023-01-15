@@ -11,4 +11,5 @@ Odwiedź moją stronę: https://hirossss.github.io/
 
 
 ## :wrench: Fork projektu: Mnożenie macierzy
-Fork projektu matrix_multiplication, który pochodzi z serwisu Papers with Code (Link: https://paperswithcode.com/paper/discovering-faster-matrix-multiplication#code) i którego celem jest odkrywanie szybszych metod mnożenia macierzy.
+Fork projektu matrix_multiplication, który pochodzi z serwisu Papers with Code (link: https://paperswithcode.com/paper/discovering-faster-matrix-multiplication#code).<br> 
+Jego celem jest odkrywanie szybszych metod mnożenia macierzy.
