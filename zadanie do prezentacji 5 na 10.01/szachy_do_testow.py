@@ -11,7 +11,7 @@ def check(data):    #do wyjasnienia korzystam z artykulu, https://www.geeksforge
                           "Kordynaty drugiego gońca: " + str((b[0], b[1])))
                     c+=1
     if c == 0:
-        return "Zadne gonce sie nie bija"
+        return "Zadne gonce sie nie bija"                   #tutaj pojawiły sie returny !!!
     if c==2:
         return "Dokladnie dwa gonce sie bija"
     if c>2:
